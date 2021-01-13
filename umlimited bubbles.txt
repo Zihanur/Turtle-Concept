@@ -1,0 +1,20 @@
+from turtle import *
+from random import *
+speed(0)
+colour = ['blue','red','green','pink','orange','purple','yellow']
+
+t1 = Turtle()
+t1.penup()
+while True:
+
+    x = randint(-200,200)
+    y = randint(-200,200)
+    circle_size = randint(1,100)
+    circle_colour = choice(colour)
+    t1.goto(x,y)
+    t1.pendown()
+    t1.color(circle_colour)
+    t1.begin_fill()
+    t1.circle(circle_size)
+    t1.end_fill()
+    t1.penup()
