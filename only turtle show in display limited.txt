@@ -1,0 +1,18 @@
+from turtle import *
+from random import *
+speed(5)
+colour = ['blue','red','green','pink','orange','purple','yellow']
+
+t1 = Turtle()
+t1.penup()
+t1.shape("turtle")
+
+for i in range(50):
+    x = randint(-200,200)
+    y = randint(-200,200)
+    turtle_colour = choice(colour)
+    t1.goto(x,y)
+    t1.pendown()
+    t1.color(turtle_colour)
+    t1.stamp()
+    t1.penup()
