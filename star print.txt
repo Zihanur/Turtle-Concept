@@ -1,0 +1,29 @@
+from turtle import *
+from random import *
+speed(0)
+colour = ['blue','red','green','pink','orange','purple','yellow','cyan','magenta']
+
+t1 = Turtle()
+t1.penup()
+
+for i in range(100):
+    x = randint(-200,200)
+    y = randint(-200,200)
+    length = randint(10,100)
+
+    box_colour = choice(colour)
+
+    t1.goto(x,y)
+    t1.pendown()
+    t1.color(box_colour)
+    t1.begin_fill()
+    t1.forward(length)
+    t1.left(145)
+    t1.forward(length)
+    t1.left(145)
+    t1.forward(length)
+    t1.left(145)
+    t1.forward(length)
+    t1.left(145)
+    t1.end_fill()
+    t1.penup()
